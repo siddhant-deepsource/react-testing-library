@@ -1,0 +1,18 @@
+version = 1
+
+exclude_patterns = [
+    ".codesandbox/**",
+    ".github/**",
+    "other/**"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  ecma_version = "2020"
+  module_system = "commonjs"
+  environment = ["nodejs"]
+  dialect = "typescript"
+  plugins = ["react"]
